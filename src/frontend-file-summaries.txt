@@ -1,0 +1,21 @@
+{
+  "frontend/src/App.tsx": "Main application component with authentication flow, profile setup, PWA install prompt handling, and service worker update detection for progressive web app functionality.",
+  "frontend/src/hooks/useQueries.ts": "Custom React Query hooks for all backend operations including tasks CRUD, user profile management, auto-reset preferences, notification settings, and procrastination toggling with proper error handling and cache invalidation.",
+  "frontend/src/pages/LoginPage.tsx": "Landing page with hero section showcasing app features and a modern gradient sign-in button (blue to purple) with hover animations, shadow effects, scale transitions, login icon, and full accessibility support.",
+  "frontend/src/pages/MainApp.tsx": "Main application layout with tabbed navigation between Tasks, Progress, and Settings views, includes header and footer.",
+  "frontend/src/components/Header.tsx": "Application header with branding, theme toggle, and user profile dropdown menu with logout functionality.",
+  "frontend/src/components/ProfileSetupModal.tsx": "Modal dialog for first-time users to set up their profile name after authentication.",
+  "frontend/src/components/TaskList.tsx": "Main task management interface displaying all tasks with completion checkboxes, procrastination button with tooltip and hourglass icon, edit/delete actions, progress stats, scheduled notification system, and separate section for procrastinated tasks with visual distinction.",
+  "frontend/src/components/TaskDialog.tsx": "Modal dialog for creating new tasks or editing existing ones with title, description, and reminder time fields.",
+  "frontend/src/components/ProgressView.tsx": "Progress tracking dashboard showing completion statistics, daily progress bar, weekly chart visualization using Recharts, and task status breakdown.",
+  "frontend/src/components/SettingsView.tsx": "Settings page for managing browser notification permissions, enabling/disabling reminders, auto-reset preferences, and app information with permission request functionality.",
+  "frontend/src/index.css": "Global styles with OKLCH color system featuring vibrant, motivating colors for light mode and calming colors for dark mode.",
+  "frontend/index.html": "HTML entry point with PWA meta tags, manifest link, Apple touch icon, and service worker registration script for offline capability and installability.",
+  "frontend/public/manifest.json": "PWA manifest file defining app metadata, icons in multiple sizes (128x128, 256x256, 512x512), standalone display mode, theme colors, and app configuration for Play Store publishing.",
+  "frontend/public/service-worker.js": "Service worker implementing cache-first strategy for static assets, network-first for navigation, precaching essential app resources, and offline fallback functionality.",
+  "frontend/public/twa-manifest.json": "Bubblewrap configuration file for Trusted Web Activity setup with app metadata, package ID, theme colors, icon references, and Android-specific settings for Play Store publishing.",
+  "frontend/public/.well-known/assetlinks.json": "Digital Asset Links configuration file for domain verification, linking the Android app package to the PWA URL with SHA-256 certificate fingerprints.",
+  "frontend/TWA_SETUP.md": "Comprehensive documentation for setting up Trusted Web Activity using Bubblewrap, including prerequisites, configuration steps, build process, Play Store publishing guide, and troubleshooting tips.",
+  "frontend/package.json": "Package configuration with added TWA build scripts (twa:init, twa:build, twa:update, twa:install) for generating Android App Bundles.",
+  "frontend/.gitignore": "Git ignore file updated to exclude TWA-related build artifacts including keystores, APK files, and AAB bundles."
+}

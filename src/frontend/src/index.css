@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.75rem;
+        
+        /* Light mode - Vibrant and motivating colors */
+        --background: 0.99 0 0;
+        --foreground: 0.2 0 0;
+        
+        --card: 1 0 0;
+        --card-foreground: 0.2 0 0;
+        
+        --popover: 1 0 0;
+        --popover-foreground: 0.2 0 0;
+        
+        /* Primary - Energetic blue */
+        --primary: 0.55 0.22 250;
+        --primary-foreground: 0.99 0 0;
+        
+        /* Secondary - Soft purple */
+        --secondary: 0.95 0.02 280;
+        --secondary-foreground: 0.2 0 0;
+        
+        /* Muted - Neutral gray */
+        --muted: 0.96 0.01 260;
+        --muted-foreground: 0.5 0.01 260;
+        
+        /* Accent - Vibrant orange for motivation */
+        --accent: 0.7 0.18 40;
+        --accent-foreground: 0.99 0 0;
+        
+        /* Destructive - Red */
+        --destructive: 0.55 0.24 25;
+        --destructive-foreground: 0.99 0 0;
+        
+        --border: 0.92 0.01 260;
+        --input: 0.92 0.01 260;
+        --ring: 0.55 0.22 250;
+        
+        /* Chart colors - Diverse and vibrant */
+        --chart-1: 0.65 0.20 150;
+        --chart-2: 0.60 0.18 200;
+        --chart-3: 0.70 0.16 40;
+        --chart-4: 0.55 0.22 280;
+        --chart-5: 0.68 0.19 340;
+        
+        --sidebar: 0.99 0 0;
+        --sidebar-foreground: 0.2 0 0;
+        --sidebar-primary: 0.55 0.22 250;
+        --sidebar-primary-foreground: 0.99 0 0;
+        --sidebar-accent: 0.95 0.02 280;
+        --sidebar-accent-foreground: 0.2 0 0;
+        --sidebar-border: 0.92 0.01 260;
+        --sidebar-ring: 0.55 0.22 250;
+    }
+
+    .dark {
+        /* Dark mode - Calming and focused */
+        --background: 0.15 0.01 260;
+        --foreground: 0.95 0.01 260;
+        
+        --card: 0.20 0.02 260;
+        --card-foreground: 0.95 0.01 260;
+        
+        --popover: 0.18 0.02 260;
+        --popover-foreground: 0.95 0.01 260;
+        
+        /* Primary - Bright blue */
+        --primary: 0.70 0.20 250;
+        --primary-foreground: 0.15 0.01 260;
+        
+        /* Secondary - Deep purple */
+        --secondary: 0.30 0.08 280;
+        --secondary-foreground: 0.95 0.01 260;
+        
+        /* Muted - Dark gray */
+        --muted: 0.25 0.02 260;
+        --muted-foreground: 0.65 0.02 260;
+        
+        /* Accent - Warm orange */
+        --accent: 0.75 0.16 40;
+        --accent-foreground: 0.15 0.01 260;
+        
+        /* Destructive - Bright red */
+        --destructive: 0.60 0.22 25;
+        --destructive-foreground: 0.95 0.01 260;
+        
+        --border: 0.30 0.02 260;
+        --input: 0.30 0.02 260;
+        --ring: 0.70 0.20 250;
+        
+        /* Chart colors - Vibrant for dark mode */
+        --chart-1: 0.70 0.22 150;
+        --chart-2: 0.65 0.20 200;
+        --chart-3: 0.75 0.18 40;
+        --chart-4: 0.68 0.20 280;
+        --chart-5: 0.72 0.20 340;
+        
+        --sidebar: 0.20 0.02 260;
+        --sidebar-foreground: 0.95 0.01 260;
+        --sidebar-primary: 0.70 0.20 250;
+        --sidebar-primary-foreground: 0.15 0.01 260;
+        --sidebar-accent: 0.30 0.08 280;
+        --sidebar-accent-foreground: 0.95 0.01 260;
+        --sidebar-border: 0.30 0.02 260;
+        --sidebar-ring: 0.70 0.20 250;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}

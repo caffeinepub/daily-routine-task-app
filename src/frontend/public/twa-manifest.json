@@ -1,0 +1,47 @@
+{
+  "packageId": "ai.caffeine.dailytasks",
+  "host": "YOUR_APP_URL_HERE",
+  "name": "Daily Routine Task App",
+  "launcherName": "Daily Tasks",
+  "display": "standalone",
+  "themeColor": "#6366f1",
+  "navigationColor": "#ffffff",
+  "navigationColorDark": "#1a1a1a",
+  "navigationDividerColor": "#e5e7eb",
+  "navigationDividerColorDark": "#374151",
+  "backgroundColor": "#ffffff",
+  "enableNotifications": true,
+  "startUrl": "/",
+  "iconUrl": "/assets/generated/app-icon.dim_512x512.png",
+  "maskableIconUrl": "/assets/generated/app-icon.dim_512x512.png",
+  "monochromeIconUrl": "/assets/generated/app-icon.dim_512x512.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "./android.keystore",
+    "alias": "android"
+  },
+  "appVersionName": "1.0.0",
+  "appVersionCode": 1,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "/manifest.json",
+  "fallbackType": "customtabs",
+  "features": {
+    "locationDelegation": {
+      "enabled": false
+    },
+    "playBilling": {
+      "enabled": false
+    }
+  },
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "orientation": "portrait",
+  "fingerprints": [],
+  "additionalTrustedOrigins": [],
+  "retainedBundles": [],
+  "appVersion": "1"
+}
